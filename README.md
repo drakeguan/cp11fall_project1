@@ -23,7 +23,7 @@ followed by option #2 and option #3 has the lowest. You are asked to use detail
 manipulation as the example to illustrate your filter or to compare filters.
 Other applications will be counted as bonus. 
 
-Reference
+## Reference
 
 1. S. Paris and F. Durand, A Fast Approximation of the Bilateral Filter Using a Signal Processing Approach, IJCV 2009. (matlab code)
 2. Z. Farbman, R. Fattal, D. Lischinski, R. Szeliski, Edge-Preserving Decompositions for Multi-Scale Tone and Detail Manipulation, SIGGRAPH 2008. (matlab code)
