@@ -25,11 +25,11 @@ Other applications will be counted as bonus.
 
 ## Reference
 
-1. S. Paris and F. Durand, A Fast Approximation of the Bilateral Filter Using a Signal Processing Approach, IJCV 2009. (matlab code)
-2. Z. Farbman, R. Fattal, D. Lischinski, R. Szeliski, Edge-Preserving Decompositions for Multi-Scale Tone and Detail Manipulation, SIGGRAPH 2008. (matlab code)
+1. S. Paris and F. Durand, A Fast Approximation of the Bilateral Filter Using a Signal Processing Approach, IJCV 2009. ([matlab code](http://people.csail.mit.edu/jiawen/software/bilateralFilter.m))
+2. Z. Farbman, R. Fattal, D. Lischinski, R. Szeliski, Edge-Preserving Decompositions for Multi-Scale Tone and Detail Manipulation, SIGGRAPH 2008. ([matlab code](http://www.cs.huji.ac.il/~danix/epd/wlsFilter.m))
 3. K. Subr, C. Soler, F. Durand, Edge-Preserving Multiscale Image Decomposition Based on Local Extrema, SIGGRAPH Asia 2009.
 4. Z. Farbman, R. Fattal, D. Lischinski, Diffusion Maps for Edge-Aware Image Editing, SIGGRAPH Asia 2010.
-5. E. Gastal, M. Oliveira, Domain Transform for Edge-Aware Image and Video Processing, SIGGRAPH 2011. (matlab code)
-6. S. Paris, S. Hasinoff, J. Kautz, Local Laplacian Filters: Edge-Aware Image Processing with a Laplacian Pyramid, SIGGRAPH 2011. (matlab code)
-7. L. Xu, C. Lu, Y. Xu, J. Jia, Image smoothing via L0 Gradient Minimization, SIGGRAPH Asia 2011. (matlab code)
-8. K. He, J. Sun, X. Tang, Guided Image Filtering, ECCV 2010. (matlab code)
+5. E. Gastal, M. Oliveira, Domain Transform for Edge-Aware Image and Video Processing, SIGGRAPH 2011. ([matlab code](http://inf.ufrgs.br/~eslgastal/DomainTransform/DomainTransformFilters-Source-v1.0.zip))
+6. S. Paris, S. Hasinoff, J. Kautz, Local Laplacian Filters: Edge-Aware Image Processing with a Laplacian Pyramid, SIGGRAPH 2011. ([matlab code](http://people.csail.mit.edu/sparis/publi/2011/siggraph/matlab_source_code.zip))
+7. L. Xu, C. Lu, Y. Xu, J. Jia, Image smoothing via L0 Gradient Minimization, SIGGRAPH Asia 2011. ([matlab code](http://www.cse.cuhk.edu.hk/~leojia/projects/L0smoothing/L0smoothing.zip))
+8. K. He, J. Sun, X. Tang, Guided Image Filtering, ECCV 2010. ([matlab code](http://personal.ie.cuhk.edu.hk/~hkm007/eccv10/guided-filter-code-v1.rar))
