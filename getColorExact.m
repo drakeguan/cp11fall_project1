@@ -1,6 +1,6 @@
-function [nI,snI]=getColorExact(colorIm,ntscIm)
+function nI=getColorExact(colorIm,ntscIm)
 
-n=size(ntscIm,1); m=size(ntscIm,2);
+[n, m, d] = size(ntscIm);
 imgSize=n*m;
 
 
@@ -72,7 +72,7 @@ A=sparse(row_inds,col_inds,vals,consts_len,imgSize);
 b=zeros(size(A,1),1);
 
 
-for t=2:3
+for t=2:d
     curIm=ntscIm(:,:,t);
     b(lblInds)=curIm(lblInds);
     new_vals=A\b;   
@@ -81,6 +81,6 @@ end
 
 
 
-snI=nI;
-nI=ntsc2rgb(nI);
+%snI=nI;
+%nI=ntsc2rgb(nI);
 
