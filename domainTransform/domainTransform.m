@@ -35,7 +35,7 @@
 %
 %  Version 1.0 - August 2011.
 
-function F = NC(img, sigma_s, sigma_r, num_iterations, joint_image)
+function F = domainTransform(img, sigma_s, sigma_r, num_iterations, joint_image)
 
     I = double(img);
 
