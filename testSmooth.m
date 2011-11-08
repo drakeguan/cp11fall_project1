@@ -41,11 +41,14 @@ for i=1:size(images, 2)
             M(:, :, k) = eval(expression);
         end
         D = I - M;
+        E = D*5 + I;
 
         % write out the smoothed/base image
         imwrite(M, [outputPath images{1, i} '_smoothed_by_' filters{j, 1} '.jpg'], 'Quality', 95);
         % write out the detail layer
         imwrite(D+0.5, [outputPath images{1, i} '_detail_by_' filters{j, 1} '.jpg'], 'Quality', 95);
+        % write out the detail-enhanced image
+        imwrite(E, [outputPath images{1, i} '_enhancement_by_' filters{j, 1} '.jpg'], 'Quality', 95);
 
         % show the smoothed image
         figure; 
