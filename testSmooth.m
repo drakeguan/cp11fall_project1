@@ -1,5 +1,5 @@
 
-inputPath = 'images/';
+inputPath = 'input_images/';
 outputPath = 'result/';
 
 filters = {
