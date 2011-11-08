@@ -3,7 +3,7 @@
 %
 % Local Extrema filter
 %
-% I: the input 3-channel image data
+% I: the input image data
 % k: the width of neighborhood for idenfication of local minima/maxima
 %
 % M: smoothed image (base)
@@ -18,9 +18,8 @@
 
 function [M, Sminima, Smaxima, Eminima, Emaxima, D] = localExtrema(I, k)
 
-if (ndims(I) ~= 3)
-    error( 'I must be a 3-channel image with size [ height, width ]' );
-end
+dim = ndims(I);
+channel = size(I, 3);
 
 if (~isa(I, 'double'))
     I = double(I)/255;
@@ -30,26 +29,29 @@ if (~exist('k'))
     k = 3;
 end
 
-%% convert the I into luminance
-yiq = rgb2ntsc(I);
-Y = yiq(:, :, 1);
+%% convert the I into luminance if necessary
+if (channel == 3)
+    yiq = rgb2ntsc(I);
+    Y = yiq(:, :, 1);
+else
+    Y = I;
+end
 
 disp('Identiﬁcation of local minima and local maxima of I');
 Sminima = double(ordfilt2(Y, k, true(k)) >= Y);
 Smaxima = double(ordfilt2(Y, k*k-k+1, true(k)) <= Y);
 
 disp('Interpolation of the local minima and maxima to compute minimal and maximal extremal envelopes respectively');
-Icolor = [];
 Icolor(:, :, 1) = Y;
-Icolor(:, :, 2) = I(:, :, 1);
-Icolor(:, :, 3) = I(:, :, 2);
-Icolor(:, :, 4) = I(:, :, 3);
+for i=1:channel
+    Icolor(:, :, i+1) = I(:, :, i);
+end
 
 Eminima = getColorExact(Sminima, Icolor);
 Emaxima = getColorExact(Smaxima, Icolor);
 
 disp('Computation of the smoothed mean M as the average of the extremal envelopes');
-M = (Eminima(:,:,2:4) + Emaxima(:,:,2:4))/2;
+M = (Eminima(:,:,2:(channel+1)) + Emaxima(:,:,2:(channel+1)))/2;
 
 D = I - M;
 
