@@ -6,7 +6,7 @@ filters = {
     'wlsFilter' 'Y';
     'bilateralFilter' 'Y, [], 0, 1, 10, 0.2';
     'localExtrema' 'Y, 11';
-    'domainTransform' 'Y, 60, 0.4'
+    'domainTransform' 'Y, 60, 0.4';
 };
 %images = {[inputPath 'flower.jpg'], [inputPath 'rock2.jpg']};
 images = {[inputPath 'flower.jpg']};
