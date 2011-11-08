@@ -8,8 +8,10 @@ filters = {
     'localExtrema' 'C, 11';
     'domainTransform' 'C, 60, 0.4';
 };
-images = {'flower', 'rock2'};
+
 %images = {'flower'};
+%images = {'flower', 'rock2'};
+images = {'cat', 'cave-flash', 'cave-noflash', 'flower', 'pflower', 'rock2', 'statue', 'toy', 'toy-mask', 'tulips'};
 
 % update/add path
 for j=1:size(filters(:, 1))
@@ -35,6 +37,7 @@ for i=1:size(images, 2)
         disp(['>> processing... ' expression]);
 
         % for each channel/component in input image
+        M = [];
         for k=1:channel
             % ex, localExtrema(I, 3)
             C = I(:, :, k);
