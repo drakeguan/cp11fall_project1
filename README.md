@@ -41,9 +41,31 @@ Other applications will be counted as bonus.
     * filter name: wlsFilter, bilateralFilter, localExtrema, domainTransform, guidedFilter, l0Minimization, ...
 
 
-## Results
+## Input Images
+
+Those input/testing images are gathered from each research mentioned, including two images
+from this assignment webpage. They are already converted to JPEG with quality of 95 for
+lesser image size to fit GitHub. I don't own any of those images and they are just used
+as a research study and course assignment.
 
 
+## Smoothed & Edge Enhanced Results
+
+### Bilateral
+### WLS
+### Domain Transform
+### Guided
+### L0 Minimization
+### Local Extrema
+
+## Plotting of Input(I), Smoothed(M) and Detail(D)
+
+### Bilateral
+### WLS
+### Domain Transform
+### Guided
+### L0 Minimization
+### Local Extrema
 
 ## Reference
 
