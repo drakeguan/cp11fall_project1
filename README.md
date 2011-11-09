@@ -2,7 +2,10 @@
 
 Assigned: 2011/10/20  
 Due: 2011/11/09 11:59pm  
+Author: Shuen-Huei (Drake) Guan, D99944013  
 url: http://www.csie.ntu.edu.tw/~cyy/courses/comphoto/11fall/assignments/proj1/
+
+
 
 ## Project description
 
@@ -22,6 +25,156 @@ different levels of difficulty, option #1 has the highest baseline grade,
 followed by option #2 and option #3 has the lowest. You are asked to use detail
 manipulation as the example to illustrate your filter or to compare filters.
 Other applications will be counted as bonus. 
+
+
+
+## Project features
+
+* Option #1 is chose for this assignment, plus the option #3's testing.
+* Local Extrema filtering is implemented as matlab.
+* The interpolation function in **Colorization Using Optimization** is used.
+* For some reason, I might not test all filtering algorithms.
+* There are around 8 testing images located in **input_images**.
+* The resulting images are located in **result**.
+* For each combination of one filter and one testing image, the resulting images are named as:
+    * **image name**\_**function name**\_by\_**filter name**
+    * function name: smoothed(M), detail(D), enhanced(D\*2+I)
+    * function name: plot_IMD: plotting of one line for its I, M, D.
+    * filter name: wlsFilter, bilateralFilter, localExtrema, domainTransform, guidedFilter, l0Minimization, ...
+
+The whole testing process is in **testSmooth.m**. Just take a look at it and play with it.
+
+
+
+## Input Images
+
+Those input/testing images are gathered from each research mentioned, including two images
+from this assignment webpage. They are already converted to JPEG with quality of 95 for
+lesser image size to fit GitHub. I don't own any of those images and they are just used
+as a research study and course assignment.
+
+### cave-flash
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/cave-flash.jpg)
+### cave-noflash
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/cave-noflash.jpg)
+### flower
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/flower.jpg)
+### pflower
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/pflower.jpg)
+### rock2
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/rock2.jpg)
+### statue
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/statue.jpg)
+### toy
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/toy.jpg)
+### tulips
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/tulips.jpg)
+
+
+
+## Smoothed & Edge Enhanced Results
+
+### Bilateral
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/cave-flash_bilateralFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/cave-noflash_bilateralFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/flower_bilateralFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/pflower_bilateralFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/rock2_bilateralFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/statue_bilateralFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/toy_bilateralFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/tulips_bilateralFilter_combo.jpg)
+
+### WLS
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/cave-flash_wlsFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/cave-noflash_wlsFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/flower_wlsFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/pflower_wlsFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/rock2_wlsFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/statue_wlsFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/toy_wlsFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/tulips_wlsFilter_combo.jpg)
+
+### Domain Transform
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/cave-flash_domainTransform_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/cave-noflash_domainTransform_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/flower_domainTransform_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/pflower_domainTransform_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/rock2_domainTransform_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/statue_domainTransform_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/toy_domainTransform_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/tulips_domainTransform_combo.jpg)
+
+### Guided
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/cave-flash_guidedFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/cave-noflash_guidedFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/flower_guidedFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/pflower_guidedFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/rock2_guidedFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/statue_guidedFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/toy_guidedFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/tulips_guidedFilter_combo.jpg)
+
+### L0 Minimization
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/cave-flash_l0Minimization_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/cave-noflash_l0Minimization_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/flower_l0Minimization_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/pflower_l0Minimization_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/rock2_l0Minimization_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/statue_l0Minimization_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/toy_l0Minimization_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/tulips_l0Minimization_combo.jpg)
+
+### Local Extrema
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/cave-flash_localExtrema_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/cave-noflash_localExtrema_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/flower_localExtrema_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/pflower_localExtrema_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/rock2_localExtrema_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/statue_localExtrema_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/toy_localExtrema_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/tulips_localExtrema_combo.jpg)
+
+
+
+
+## Plotting of Input(I), Smoothed(M) and Detail(D)
+
+For each filtering, the plotting of **flower** is demonstrated here.
+I just randomly pick one line from the image (actually, I pick the line with one-third height). 
+The original input image is **Blue**, the smoothed one is **Green**, and
+the detail(the difference between input and smoothed one) is **Red**.
+
+For more plotting, please go to **result_images**.
+
+### Bilateral
+![Bilateral](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_bilateralFilter.jpg)
+### WLS
+![WLS](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_wlsFilter.jpg)
+### Domain Transform
+![Domain Transform](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_domainTransform.jpg)
+### Guided
+![Guided](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_guidedFilter.jpg)
+### L0 Minimization
+![L0 Minimization](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_l0Minimization.jpg)
+### Local Extrema
+![Local Extrema](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_localExtrema.jpg)
+
+
+
+## Video(Image Sequence) Result
+
+Here, I apply the **Local Extrema Filter** to an open source movie, 
+[Sintel, the Durian Open Movie Proejct](http://www.sintel.org/).
+The first one is just the smoothed version, mimicing the NPR effect.
+The second one (if generated) is the edge-enhanced version.
+
+[![Sintel](http://www.sintel.org/wp-content/uploads/2010/06/08.2l_comp_000465.jpg)](http://www.youtube.com/watch?v=eRsGyueVLvQ)
+Youtube: [Sintel - Third Open Movie by Blender Foundation](http://www.youtube.com/watch?v=eRsGyueVLvQ)
+
+[![Sintel by Local Extrema](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/sintel/sintel_trailer_smoothed.jpg)](http://www.youtube.com/watch?v=\_F0fnSJkFkI)
+Youtube: [Sintel by Local Extrema](http://www.youtube.com/watch?v=\_F0fnSJkFkI)
+
+
 
 ## Reference
 
