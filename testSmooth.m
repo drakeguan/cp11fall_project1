@@ -15,7 +15,7 @@ outputPath = 'result/';
 % filter list, each is a subfolder name with similar function name, 
 % followed by its own parameters
 filters = {
-    'l0Minimization' 'C, 0.005';
+    'l0Minimization' 'C, 0.003';
     'wlsFilter' 'C, 1.1, 1.5';
     'bilateralFilter' 'C, [], 0, 1, 10, 0.2';
     'localExtrema' 'C, Y, 17';
@@ -53,6 +53,7 @@ for i=1:size(images, 2)
     YIQ = rgb2ntsc(I);
     Y = YIQ(:, :, 1);
     [height, width, channel] = size(I);
+    disp(['>> processing...' filename]);
 
     if (flag_imshow)
         figure; 
@@ -63,7 +64,7 @@ for i=1:size(images, 2)
     % for each filter
     for j=1:size(filters(:, 1))
         expression = sprintf('%s(%s)', filters{j, 1}, filters{j, 2});
-        disp(['>> processing... ' expression]);
+        disp(['>>   applying the filter ' expression]);
 
         % for each channel/component in input image
         M = [];
