@@ -6,6 +6,7 @@ Author: Shuen-Huei (Drake) Guan, D99944013
 url: http://www.csie.ntu.edu.tw/~cyy/courses/comphoto/11fall/assignments/proj1/
 
 
+
 ## Project description
 
 In the class, we have introduced a bunch of edge-aware filtering: bilateral,
@@ -26,6 +27,7 @@ manipulation as the example to illustrate your filter or to compare filters.
 Other applications will be counted as bonus. 
 
 
+
 ## Project features
 
 * Option #1 is chose for this assignment, plus the option #3's testing.
@@ -35,10 +37,11 @@ Other applications will be counted as bonus.
 * There are around 8 testing images located in **input_images**.
 * The resulting images are located in **result**.
 * For each combination of one filter and one testing image, the resulting images are named as:
-    * **image name**_**function name**_by_**filter name**
+    * **image name**\_**function name**\_by\_**filter name**
     * function name: smoothed(M), detail(D), enhanced(D\*2+I)
     * function name: plot_IMD: plotting of one line for its I, M, D.
     * filter name: wlsFilter, bilateralFilter, localExtrema, domainTransform, guidedFilter, l0Minimization, ...
+
 
 
 ## Input Images
@@ -65,6 +68,8 @@ as a research study and course assignment.
 ### tulips
 ![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/tulips.jpg)
 
+
+
 ## Smoothed & Edge Enhanced Results
 
 ### Bilateral
@@ -73,6 +78,8 @@ as a research study and course assignment.
 ### Guided
 ### L0 Minimization
 ### Local Extrema
+
+
 
 ## Plotting of Input(I), Smoothed(M) and Detail(D)
 
@@ -85,21 +92,33 @@ For more plotting, please go to **result_images**.
 
 ### Bilateral
 ![Bilateral](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_bilateralFilter.jpg)
-
 ### WLS
 ![WLS](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_wlsFilter.jpg)
-
 ### Domain Transform
 ![Domain Transform](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_domainTransform.jpg)
-
 ### Guided
 ![Guided](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_guidedFilter.jpg)
-
 ### L0 Minimization
 ![L0 Minimization](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_l0Minimization.jpg)
-
 ### Local Extrema
 ![Local Extrema](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_localExtrema.jpg)
+
+
+
+## Video(Image Sequence) Result
+
+Here, I apply the **Local Extrema Filter** to an open source movie, 
+[Sintel, the Durian Open Movie Proejct](http://www.sintel.org/).
+The first one is just the smoothed version, mimicing the NPR effect.
+The second one (if generated) is the edge-enhanced version.
+
+![Sintel](http://www.sintel.org/wp-content/uploads/2010/06/08.2l_comp_000465.jpg)
+
+### Youtube links
+
+* [Sintel - Third Open Movie by Blender Foundation](http://www.youtube.com/watch?v=eRsGyueVLvQ)
+* [Sintel by Local Extrema](http://www.youtube.com/watch?v=\_F0fnSJkFkI)
+
 
 
 ## Reference
