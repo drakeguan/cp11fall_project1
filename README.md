@@ -73,11 +73,65 @@ as a research study and course assignment.
 ## Smoothed & Edge Enhanced Results
 
 ### Bilateral
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/cave-flash_bilateralFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/cave-noflash_bilateralFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/flower_bilateralFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/pflower_bilateralFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/rock2_bilateralFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/statue_bilateralFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/toy_bilateralFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/tulips_bilateralFilter_combo.jpg)
+
 ### WLS
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/cave-flash_wlsFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/cave-noflash_wlsFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/flower_wlsFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/pflower_wlsFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/rock2_wlsFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/statue_wlsFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/toy_wlsFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/tulips_wlsFilter_combo.jpg)
+
 ### Domain Transform
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/cave-flash_domainTransform_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/cave-noflash_domainTransform_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/flower_domainTransform_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/pflower_domainTransform_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/rock2_domainTransform_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/statue_domainTransform_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/toy_domainTransform_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/tulips_domainTransform_combo.jpg)
+
 ### Guided
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/cave-flash_guidedFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/cave-noflash_guidedFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/flower_guidedFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/pflower_guidedFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/rock2_guidedFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/statue_guidedFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/toy_guidedFilter_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/tulips_guidedFilter_combo.jpg)
+
 ### L0 Minimization
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/cave-flash_l0Minimization_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/cave-noflash_l0Minimization_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/flower_l0Minimization_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/pflower_l0Minimization_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/rock2_l0Minimization_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/statue_l0Minimization_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/toy_l0Minimization_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/tulips_l0Minimization_combo.jpg)
+
 ### Local Extrema
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/cave-flash_localExtrema_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/cave-noflash_localExtrema_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/flower_localExtrema_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/pflower_localExtrema_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/rock2_localExtrema_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/statue_localExtrema_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/toy_localExtrema_combo.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/combo/tulips_localExtrema_combo.jpg)
+
 
 
 
