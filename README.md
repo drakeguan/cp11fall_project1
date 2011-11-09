@@ -2,7 +2,9 @@
 
 Assigned: 2011/10/20  
 Due: 2011/11/09 11:59pm  
+Author: Shuen-Huei (Drake) Guan, D99944013  
 url: http://www.csie.ntu.edu.tw/~cyy/courses/comphoto/11fall/assignments/proj1/
+
 
 ## Project description
 
@@ -22,6 +24,75 @@ different levels of difficulty, option #1 has the highest baseline grade,
 followed by option #2 and option #3 has the lowest. You are asked to use detail
 manipulation as the example to illustrate your filter or to compare filters.
 Other applications will be counted as bonus. 
+
+
+## Project features
+
+* Option #1 is chose for this assignment, plus the option #3's testing.
+* Local Extrema filtering is implemented as matlab.
+* The interpolation function in **Colorization Using Optimization** is used.
+* For some reason, I might not test all filtering algorithms.
+* There are around 8 testing images located in **input_images**.
+* The resulting images are located in **result**.
+* For each combination of one filter and one testing image, the resulting images are named as:
+    * **image name**_**function name**_by_**filter name**
+    * function name: smoothed(M), detail(D), enhanced(D\*2+I)
+    * function name: plot_IMD: plotting of one line for its I, M, D.
+    * filter name: wlsFilter, bilateralFilter, localExtrema, domainTransform, guidedFilter, l0Minimization, ...
+
+
+## Input Images
+
+Those input/testing images are gathered from each research mentioned, including two images
+from this assignment webpage. They are already converted to JPEG with quality of 95 for
+lesser image size to fit GitHub. I don't own any of those images and they are just used
+as a research study and course assignment.
+
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/cave-flash.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/cave-noflash.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/flower.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/pflower.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/rock2.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/statue.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/toy.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/tulips.jpg)
+
+## Smoothed & Edge Enhanced Results
+
+### Bilateral
+### WLS
+### Domain Transform
+### Guided
+### L0 Minimization
+### Local Extrema
+
+## Plotting of Input(I), Smoothed(M) and Detail(D)
+
+For each filtering, the plotting of **flower** is demonstrated here.
+I just randomly pick one line from the image (actually, I pick the line with one-third height). 
+The original input image is **Blue**, the smoothed one is **Green**, and
+the detail(the difference between input and smoothed one) is **Red**.
+
+For more plotting, please go to **result_images**.
+
+### Bilateral
+![Bilateral](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_bilateralFilter.jpg)
+
+### WLS
+![WLS](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_wlsFilter.jpg)
+
+### Domain Transform
+![Domain Transform](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_domainTransform.jpg)
+
+### Guided
+![Guided](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_guidedFilter.jpg)
+
+### L0 Minimization
+![L0 Minimization](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_l0Minimization.jpg)
+
+### Local Extrema
+![Local Extrema](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_localExtrema.jpg)
+
 
 ## Reference
 
