@@ -91,7 +91,11 @@ for i=1:size(images, 2)
 
         % plot the original, base(smoothed) and detail layer in a randomly picked row
         row = floor(height/3);
-        figure; 
+        if (flag_imshow)
+            figure; 
+        else
+            figure('visible','off');
+        end
         plot(1:width, I(row,:,1), 1:width, M(row,:,1), 1:width, D(row,:,1), 'LineWidth', 2);
         title(['plot of original, base and detail (' filename ') by ' expression]);
         % write out the plot
