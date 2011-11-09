@@ -48,6 +48,14 @@ from this assignment webpage. They are already converted to JPEG with quality of
 lesser image size to fit GitHub. I don't own any of those images and they are just used
 as a research study and course assignment.
 
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/cave-flash.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/cave-noflash.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/flower.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/pflower.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/rock2.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/statue.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/toy.jpg)
+![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/tulips.jpg)
 
 ## Smoothed & Edge Enhanced Results
 
@@ -68,11 +76,23 @@ the detail(the difference between input and smoothed one) is **Red**.
 For more plotting, please go to **result_images**.
 
 ### Bilateral
+![Bilateral](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_bilateralFilter.jpg)
+
 ### WLS
+![WLS](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_wlsFilter.jpg)
+
 ### Domain Transform
+![Domain Transform](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_domainTransform.jpg)
+
 ### Guided
+![Guided](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_guidedFilter.jpg)
+
 ### L0 Minimization
+![L0 Minimization](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_l0Minimization.jpg)
+
 ### Local Extrema
+![Local Extrema](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_localExtrema.jpg)
+
 
 ## Reference
 
