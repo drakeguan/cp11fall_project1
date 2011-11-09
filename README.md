@@ -2,7 +2,9 @@
 
 Assigned: 2011/10/20  
 Due: 2011/11/09 11:59pm  
+Author: Shuen-Huei (Drake) Guan, D99944013  
 url: http://www.csie.ntu.edu.tw/~cyy/courses/comphoto/11fall/assignments/proj1/
+
 
 ## Project description
 
@@ -23,6 +25,7 @@ followed by option #2 and option #3 has the lowest. You are asked to use detail
 manipulation as the example to illustrate your filter or to compare filters.
 Other applications will be counted as bonus. 
 
+
 ## Project features
 
 * Option #1 is chose for this assignment, plus the option #3's testing.
@@ -37,7 +40,9 @@ Other applications will be counted as bonus.
     * function name: plot_IMD: plotting of one line for its I, M, D.
     * filter name: wlsFilter, bilateralFilter, localExtrema, domainTransform, guidedFilter, l0Minimization, ...
 
+
 ## Results
+
 
 
 ## Reference
