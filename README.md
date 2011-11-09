@@ -48,13 +48,21 @@ from this assignment webpage. They are already converted to JPEG with quality of
 lesser image size to fit GitHub. I don't own any of those images and they are just used
 as a research study and course assignment.
 
+### cave-flash
 ![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/cave-flash.jpg)
+### cave-noflash
 ![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/cave-noflash.jpg)
+### flower
 ![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/flower.jpg)
+### pflower
 ![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/pflower.jpg)
+### rock2
 ![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/rock2.jpg)
+### statue
 ![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/statue.jpg)
+### toy
 ![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/toy.jpg)
+### tulips
 ![](https://github.com/drakeguan/cp11fall_project1/raw/develop/input_images/tulips.jpg)
 
 ## Smoothed & Edge Enhanced Results
