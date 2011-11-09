@@ -166,10 +166,10 @@ Here, I apply the **Local Extrema Filter** to an open source movie,
 The first one is just the smoothed version, mimicing the NPR effect.
 The second one (if generated) is the edge-enhanced version.
 
-![Sintel](http://www.sintel.org/wp-content/uploads/2010/06/08.2l_comp_000465.jpg)
+[![Sintel](http://www.sintel.org/wp-content/uploads/2010/06/08.2l_comp_000465.jpg)](http://www.youtube.com/watch?v=eRsGyueVLvQ)
 Youtube: [Sintel - Third Open Movie by Blender Foundation](http://www.youtube.com/watch?v=eRsGyueVLvQ)
 
-![Sintel by Local Extrema](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/sintel/sintel_trailer_smoothed.jpg)
+[![Sintel by Local Extrema](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/sintel/sintel_trailer_smoothed.jpg)](http://www.youtube.com/watch?v=\_F0fnSJkFkI)
 Youtube: [Sintel by Local Extrema](http://www.youtube.com/watch?v=\_F0fnSJkFkI)
 
 
