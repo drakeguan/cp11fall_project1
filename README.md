@@ -23,6 +23,23 @@ followed by option #2 and option #3 has the lowest. You are asked to use detail
 manipulation as the example to illustrate your filter or to compare filters.
 Other applications will be counted as bonus. 
 
+## Project features
+
+* Option #1 is chose for this assignment, plus the option #3's testing.
+* Local Extrema filtering is implemented as matlab.
+* The interpolation function in **Colorization Using Optimization** is used.
+* For some reason, I might not test all filtering algorithms.
+* There are around 8 testing images located in **input_images**.
+* The resulting images are located in **result**.
+* For each combination of one filter and one testing image, the resulting images are named as:
+    * **image name**_**function name**_by_**filter name**
+    * function name: smoothed(M), detail(D), enhanced(D\*2+I)
+    * function name: plot_IMD: plotting of one line for its I, M, D.
+    * filter name: wlsFilter, bilateralFilter, localExtrema, domainTransform, guidedFilter, l0Minimization, ...
+
+## Results
+
+
 ## Reference
 
 1. S. Paris and F. Durand, A Fast Approximation of the Bilateral Filter Using a Signal Processing Approach, IJCV 2009. ([matlab code](http://people.csail.mit.edu/jiawen/software/bilateralFilter.m))
