@@ -15,6 +15,7 @@ outputPath = 'result/';
 % filter list, each is a subfolder name with similar function name, 
 % followed by its own parameters
 filters = {
+    'l0Minimization' 'C, 0.005';
     'wlsFilter' 'C, 1.1, 1.5';
     'bilateralFilter' 'C, [], 0, 1, 10, 0.2';
     'localExtrema' 'C, Y, 17';
