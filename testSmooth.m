@@ -1,7 +1,19 @@
+%
+% testing program of several edge-preserving filters
+% author: Shuen-Huei (Drake) Guan
+% Nov 2011
+%
 
+%%%% configurations
+
+% input path for images
 inputPath = 'input_images/';
+
+% output path for results
 outputPath = 'result/';
 
+% filter list, each is a subfolder name with similar function name, 
+% followed by its own parameters
 filters = {
     'wlsFilter' 'C';
     'bilateralFilter' 'C, [], 0, 1, 10, 0.2';
@@ -9,14 +21,24 @@ filters = {
     'domainTransform' 'C, 60, 0.4';
 };
 
-%images = {'flower'};
-%images = {'flower', 'rock2'};
+% image list for testing
 images = {'cave-flash', 'cave-noflash', 'flower', 'pflower', 'rock2', 'statue', 'toy', 'tulips'};
+
+% image enhancement factor/ratio
+enc_ratio = 3;
 
 % update/add path
 for j=1:size(filters(:, 1))
     addpath(filters{j, 1});
 end
+
+% flag to show the result or not
+flag_imshow = 0;
+
+
+
+
+%%%% testing program starts here
 
 % for each image
 for i=1:size(images, 2)
@@ -27,9 +49,11 @@ for i=1:size(images, 2)
     Y = YIQ(:, :, 1);
     [height, width, channel] = size(I);
 
-    figure; 
-    imshow(I); 
-    title(['input image: ' filename]);
+    if (flag_imshow)
+        figure; 
+        imshow(I); 
+        title(['input image: ' filename]);
+    end
 
     % for each filter
     for j=1:size(filters(:, 1))
@@ -44,24 +68,26 @@ for i=1:size(images, 2)
             M(:, :, k) = eval(expression);
         end
         D = I - M;
-        E = D*5 + I;
+        E = D*enc_ratio + I;
 
         % write out the smoothed/base image
         imwrite(M, [outputPath images{1, i} '_smoothed_by_' filters{j, 1} '.jpg'], 'Quality', 95);
         % write out the detail layer
         imwrite(D+0.5, [outputPath images{1, i} '_detail_by_' filters{j, 1} '.jpg'], 'Quality', 95);
         % write out the detail-enhanced image
-        imwrite(E, [outputPath images{1, i} '_enhancement_by_' filters{j, 1} '.jpg'], 'Quality', 95);
+        imwrite(E, [outputPath images{1, i} '_enhanced_by_' filters{j, 1} '.jpg'], 'Quality', 95);
 
-        % show the smoothed image
-        figure; 
-        imshow(M); 
-        title(['smoothed image (' filename ') by ' expression]);
+        if (flag_imshow)
+            % show the smoothed image
+            figure; 
+            imshow(M); 
+            title(['smoothed image (' filename ') by ' expression]);
 
-        % show the detail layer
-        figure; 
-        imshow(D+0.5); 
-        title(['detail layer (' filename ') by ' expression]);
+            % show the detail layer
+            figure; 
+            imshow(D+0.5); 
+            title(['detail layer (' filename ') by ' expression]);
+        end
 
         % plot the original, base(smoothed) and detail layer in a randomly picked row
         row = floor(height/3);
