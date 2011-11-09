@@ -42,6 +42,8 @@ Other applications will be counted as bonus.
     * function name: plot_IMD: plotting of one line for its I, M, D.
     * filter name: wlsFilter, bilateralFilter, localExtrema, domainTransform, guidedFilter, l0Minimization, ...
 
+The whole testing process is in **testSmooth.m**. Just take a look at it and play with it.
+
 
 
 ## Input Images
