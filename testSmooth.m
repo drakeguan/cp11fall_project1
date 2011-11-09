@@ -74,7 +74,7 @@ for i=1:size(images, 2)
             M(:, :, k) = eval(expression);
         end
         D = I - M;
-        E = D*enc_ratio + I;
+        E = D*enc_ratio + M;
 
         if (flag_saveimg)
             % write out the smoothed/base image
