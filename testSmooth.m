@@ -15,16 +15,16 @@ outputPath = 'result/';
 % filter list, each is a subfolder name with similar function name, 
 % followed by its own parameters
 filters = {
-    'wlsFilter' 'C';
+    'wlsFilter' 'C, 1.1, 1.5';
     'bilateralFilter' 'C, [], 0, 1, 10, 0.2';
-    'localExtrema' 'C, Y, 11';
+    'localExtrema' 'C, Y, 17';
     'domainTransform' 'C, 20, 0.4';
     'guidedFilter' 'Y, C, 8, 0.2^2';
 };
 
 % image list for testing
-%images = {'cave-flash', 'cave-noflash', 'flower', 'pflower', 'rock2', 'statue', 'toy', 'tulips'};
-images = {'flower'};
+images = {'cave-flash', 'cave-noflash', 'flower', 'pflower', 'rock2', 'statue', 'toy', 'tulips'};
+%images = {'flower'};
 
 % image enhancement factor/ratio
 enc_ratio = 3;
