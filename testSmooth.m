@@ -17,7 +17,7 @@ outputPath = 'result/';
 filters = {
     'wlsFilter' 'C';
     'bilateralFilter' 'C, [], 0, 1, 10, 0.2';
-    'localExtrema' 'C, 11';
+    'localExtrema' 'C, Y, 11';
     'domainTransform' 'C, 60, 0.4';
 };
 

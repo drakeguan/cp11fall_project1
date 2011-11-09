@@ -4,7 +4,9 @@
 % Local Extrema filter
 %
 % I: the input image data
+% Y: the reference/cross/joint data, default to luminance(I)
 % k: the width of neighborhood for idenfication of local minima/maxima
+%    default to 3
 %
 % M: smoothed image (base)
 % Sminima: local minima extrema
@@ -15,7 +17,7 @@
 % author: Shuen-Huei (Drake) Guan
 %
 
-function [M, Sminima, Smaxima, Eminima, Emaxima] = localExtrema(I, k)
+function [M, Sminima, Smaxima, Eminima, Emaxima] = localExtrema(I, Y, k)
 
 dim = ndims(I);
 channel = size(I, 3);
@@ -24,17 +26,20 @@ if (~isa(I, 'double'))
     I = double(I)/255;
 end
 
+if (~exist('Y'))
+    %% convert the I into luminance if necessary
+    if (channel == 3)
+        yiq = rgb2ntsc(I);
+        Y = yiq(:, :, 1);
+    else
+        Y = I;
+    end
+end
+
 if (~exist('k'))
     k = 3;
 end
 
-%% convert the I into luminance if necessary
-if (channel == 3)
-    yiq = rgb2ntsc(I);
-    Y = yiq(:, :, 1);
-else
-    Y = I;
-end
 
 %disp('    Identiﬁcation of local minima and local maxima of I');
 Sminima = double(ordfilt2(Y, k, true(k)) >= Y);
