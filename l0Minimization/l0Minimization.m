@@ -7,7 +7,7 @@
 %   The code and the algorithm are for non-comercial use only.
 
 
-function S = L0Smoothing(Im, lambda, kappa)
+function S = l0Minimization(Im, lambda, kappa)
 %L0Smooth - Image Smoothing via L0 Gradient Minimization
 %   S = L0Smooth(Im, lambda, kappa) performs L0 graidient smoothing of input
 %   image Im, with smoothness weight lambda and rate kappa.
