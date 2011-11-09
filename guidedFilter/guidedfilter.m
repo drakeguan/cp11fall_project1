@@ -1,4 +1,4 @@
-function q = guidedfilter(I, p, r, eps)
+function q = guidedFilter(I, p, r, eps)
 %   GUIDEDFILTER   O(1) time implementation of guided filter.
 %
 %   - guidance image: I (should be a gray-scale/single channel image)

@@ -18,11 +18,13 @@ filters = {
     'wlsFilter' 'C';
     'bilateralFilter' 'C, [], 0, 1, 10, 0.2';
     'localExtrema' 'C, Y, 11';
-    'domainTransform' 'C, 60, 0.4';
+    'domainTransform' 'C, 20, 0.4';
+    'guidedFilter' 'Y, C, 8, 0.2^2';
 };
 
 % image list for testing
-images = {'cave-flash', 'cave-noflash', 'flower', 'pflower', 'rock2', 'statue', 'toy', 'tulips'};
+%images = {'cave-flash', 'cave-noflash', 'flower', 'pflower', 'rock2', 'statue', 'toy', 'tulips'};
+images = {'flower'};
 
 % image enhancement factor/ratio
 enc_ratio = 3;
@@ -35,6 +37,8 @@ end
 % flag to show the result or not
 flag_imshow = 0;
 
+% flag to save the result or not
+flag_saveimg = 1;
 
 
 
@@ -70,12 +74,14 @@ for i=1:size(images, 2)
         D = I - M;
         E = D*enc_ratio + I;
 
-        % write out the smoothed/base image
-        imwrite(M, [outputPath images{1, i} '_smoothed_by_' filters{j, 1} '.jpg'], 'Quality', 95);
-        % write out the detail layer
-        imwrite(D+0.5, [outputPath images{1, i} '_detail_by_' filters{j, 1} '.jpg'], 'Quality', 95);
-        % write out the detail-enhanced image
-        imwrite(E, [outputPath images{1, i} '_enhanced_by_' filters{j, 1} '.jpg'], 'Quality', 95);
+        if (flag_saveimg)
+            % write out the smoothed/base image
+            imwrite(M, [outputPath images{1, i} '_smoothed_by_' filters{j, 1} '.jpg'], 'Quality', 95);
+            % write out the detail layer
+            imwrite(D+0.5, [outputPath images{1, i} '_detail_by_' filters{j, 1} '.jpg'], 'Quality', 95);
+            % write out the detail-enhanced image
+            imwrite(E, [outputPath images{1, i} '_enhanced_by_' filters{j, 1} '.jpg'], 'Quality', 95);
+        end
 
         if (flag_imshow)
             % show the smoothed image
@@ -98,7 +104,10 @@ for i=1:size(images, 2)
         end
         plot(1:width, I(row,:,1), 1:width, M(row,:,1), 1:width, D(row,:,1), 'LineWidth', 2);
         title(['plot of original, base and detail (' filename ') by ' expression]);
-        % write out the plot
-        print('-djpeg95', [outputPath images{1, i} '_plot_IMD_by_' filters{j, 1} '.jpg']);
+
+        if (flag_saveimg)
+            % write out the plot
+            print('-djpeg95', [outputPath images{1, i} '_plot_IMD_by_' filters{j, 1} '.jpg']);
+        end
     end
 end
