@@ -60,6 +60,13 @@ as a research study and course assignment.
 
 ## Plotting of Input(I), Smoothed(M) and Detail(D)
 
+For each filtering, the plotting of **flower** is demonstrated here.
+I just randomly pick one line from the image (actually, I pick the line with one-third height). 
+The original input image is **Blue**, the smoothed one is **Green**, and
+the detail(the difference between input and smoothed one) is **Red**.
+
+For more plotting, please go to **result_images**.
+
 ### Bilateral
 ### WLS
 ### Domain Transform
