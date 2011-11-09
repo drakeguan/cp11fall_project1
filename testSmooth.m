@@ -11,7 +11,7 @@ filters = {
 
 %images = {'flower'};
 %images = {'flower', 'rock2'};
-images = {'cat', 'cave-flash', 'cave-noflash', 'flower', 'pflower', 'rock2', 'statue', 'toy', 'toy-mask', 'tulips'};
+images = {'cave-flash', 'cave-noflash', 'flower', 'pflower', 'rock2', 'statue', 'toy', 'tulips'};
 
 % update/add path
 for j=1:size(filters(:, 1))
