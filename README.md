@@ -43,7 +43,7 @@ Other applications will be counted as bonus.
     * function name: plot_IMD: plotting of one line for its I, M, D.
     * filter name: [wlsFilter](https://github.com/drakeguan/cp11fall_project1/tree/develop/wlsFilter), [bilateralFilter](https://github.com/drakeguan/cp11fall_project1/tree/develop/bilateralFilter), [localExtrema](https://github.com/drakeguan/cp11fall_project1/tree/develop/localExtrema), [domainTransform](https://github.com/drakeguan/cp11fall_project1/tree/develop/DomainTransform), [guidedFilter](https://github.com/drakeguan/cp11fall_project1/tree/develop/guidedFilter), [l0Minimization](https://github.com/drakeguan/cp11fall_project1/tree/develop/l0Minimization), ...
 
-The whole testing process is in **[testSmooth.m](testSmooth.m)**. Just take a look at it and play with it.
+The whole testing process is in **[testSmooth.m](https://github.com/drakeguan/cp11fall_project1/tree/develop/testSmooth.m)**. Just take a look at it and play with it.
 
 
 
