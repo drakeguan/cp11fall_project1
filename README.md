@@ -32,6 +32,7 @@ Other applications will be counted as bonus.
 
 * Option #1 is chose for this assignment, plus the option #3's testing.
 * Local Extrema filtering is implemented as [matlab](tree/develop/localExtrema/).
+* Other filters are from copied from authors' web page. See the last part of this document for further information.
 * The interpolation function in **[Colorization Using Optimization](http://www.cs.huji.ac.il/~yweiss/Colorization/)** is used.
 * For some reason, I might not test all filtering algorithms.
 * There are around 8 testing images located in **[input_images](tree/develop/input_images/)**.
@@ -140,7 +141,7 @@ I just randomly pick one line from the image (actually, I pick the line with one
 The original input image is **Blue**, the smoothed one is **Green**, and
 the detail(the difference between input and smoothed one) is **Red**.
 
-For more plotting, please go to **[result_images](tree/develop/result_images/plot/)**.
+For more plotting, please go to **[result/plot](tree/develop/result/plot/)**.
 
 ### Bilateral
 ![Bilateral](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/plot/flower_plot_IMD_by_bilateralFilter.jpg)
