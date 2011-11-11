@@ -31,17 +31,17 @@ Other applications will be counted as bonus.
 ## Project features
 
 * Option #1 is chose for this assignment, plus the option #3's testing.
-* Local Extrema filtering is implemented as [matlab](tree/develop/localExtrema/).
+* Local Extrema filtering is implemented as [matlab](https://github.com/drakeguan/cp11fall_project1/tree/develop/localExtrema/).
 * Other filters are from copied from authors' web page. See the last part of this document for further information.
 * The interpolation function in **[Colorization Using Optimization](http://www.cs.huji.ac.il/~yweiss/Colorization/)** is used.
 * For some reason, I might not test all filtering algorithms.
-* There are around 8 testing images located in **[input_images](tree/develop/input_images/)**.
-* The resulting images are located in **[result](tree/develop/result/)**.
+* There are around 8 testing images located in **[input_images](https://github.com/drakeguan/cp11fall_project1/tree/develop/input_images/)**.
+* The resulting images are located in **[result](https://github.com/drakeguan/cp11fall_project1/tree/develop/result/)**.
 * For each combination of one filter and one testing image, the resulting images are named as:
     * **image name**\_**function name**\_by\_**filter name**
     * function name: smoothed(M), detail(D), enhanced(D\*2+M)
     * function name: plot_IMD: plotting of one line for its I, M, D.
-    * filter name: [wlsFilter](tree/develop/wlsFilter), [bilateralFilter](tree/develop/bilateralFilter), [localExtrema](tree/develop/localExtrema), [domainTransform](tree/develop/DomainTransform), [guidedFilter](tree/develop/guidedFilter), [l0Minimization](tree/develop/l0Minimization), ...
+    * filter name: [wlsFilter](https://github.com/drakeguan/cp11fall_project1/tree/develop/wlsFilter), [bilateralFilter](https://github.com/drakeguan/cp11fall_project1/tree/develop/bilateralFilter), [localExtrema](https://github.com/drakeguan/cp11fall_project1/tree/develop/localExtrema), [domainTransform](https://github.com/drakeguan/cp11fall_project1/tree/develop/DomainTransform), [guidedFilter](https://github.com/drakeguan/cp11fall_project1/tree/develop/guidedFilter), [l0Minimization](https://github.com/drakeguan/cp11fall_project1/tree/develop/l0Minimization), ...
 
 The whole testing process is in **[testSmooth.m](testSmooth.m)**. Just take a look at it and play with it.
 
@@ -141,7 +141,7 @@ I just randomly pick one line from the image (actually, I pick the line with one
 The original input image is **Blue**, the smoothed one is **Green**, and
 the detail(the difference between input and smoothed one) is **Red**.
 
-For more plotting, please go to **[result/plot](tree/develop/result/plot/)**.
+For more plotting, please go to **[result/plot](https://github.com/drakeguan/cp11fall_project1/tree/develop/result/plot/)**.
 
 ### Bilateral
 ![Bilateral](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/plot/flower_plot_IMD_by_bilateralFilter.jpg)
