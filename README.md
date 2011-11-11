@@ -143,17 +143,17 @@ the detail(the difference between input and smoothed one) is **Red**.
 For more plotting, please go to **[result_images](result_images/plot/)**.
 
 ### Bilateral
-![Bilateral](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_bilateralFilter.jpg)
+![Bilateral](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/plot/flower_plot_IMD_by_bilateralFilter.jpg)
 ### WLS
-![WLS](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_wlsFilter.jpg)
+![WLS](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/plot/flower_plot_IMD_by_wlsFilter.jpg)
 ### Domain Transform
-![Domain Transform](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_domainTransform.jpg)
+![Domain Transform](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/plot/flower_plot_IMD_by_domainTransform.jpg)
 ### Guided
-![Guided](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_guidedFilter.jpg)
+![Guided](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/plot/flower_plot_IMD_by_guidedFilter.jpg)
 ### L0 Minimization
-![L0 Minimization](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_l0Minimization.jpg)
+![L0 Minimization](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/plot/flower_plot_IMD_by_l0Minimization.jpg)
 ### Local Extrema
-![Local Extrema](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/flower_plot_IMD_by_localExtrema.jpg)
+![Local Extrema](https://github.com/drakeguan/cp11fall_project1/raw/develop/result/plot/flower_plot_IMD_by_localExtrema.jpg)
 
 
 
