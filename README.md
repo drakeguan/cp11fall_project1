@@ -2,7 +2,7 @@
 
 Assigned: 2011/10/20  
 Due: 2011/11/09 11:59pm  
-Author: Shuen-Huei (Drake) Guan, D99944013  
+Author: Shuen-Huei (Drake) Guan, D99944013 [![](https://img.shields.io/badge/SayThanks.io-%E2%98%BC-1EAEDB.svg)](https://saythanks.io/to/drakeguan)  
 url: http://www.csie.ntu.edu.tw/~cyy/courses/comphoto/11fall/assignments/proj1/
 
 
